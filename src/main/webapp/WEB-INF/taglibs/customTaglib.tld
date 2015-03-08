@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+  <tlib-version>1.0</tlib-version>
+  <short-name>paginator</short-name>
+  <uri>/WEB-INF/taglibs/customTaglib.tld</uri>
+ 
+  <tag>
+    <name>paginate</name>
+    <tag-class>com.ekiras.taglib.PaginationTaglib</tag-class>
+    <body-content>empty</body-content>
+    
+    <attribute>
+      <name>next</name>
+      <rtexprvalue>true</rtexprvalue>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>previous</name>
+      <rtexprvalue>true</rtexprvalue>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>uri</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+      <type>java.lang.String</type>
+    </attribute>
+    <attribute>
+      <name>offset</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+      <type>int</type>
+    </attribute>
+    <attribute>
+      <name>count</name>
+      <required>true</required>
+      <rtexprvalue>true</rtexprvalue>
+      <type>int</type>
+    </attribute>
+    <attribute>
+      <name>max</name>
+      <rtexprvalue>true</rtexprvalue>
+      <type>int</type>
+    </attribute>
+  </tag>
+</taglib>
